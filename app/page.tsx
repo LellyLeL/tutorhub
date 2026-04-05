@@ -1,3 +1,15 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+
 export default function Home() {
-  return <div>TutorHub Home</div>;
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="grow">
+        <Hero />
+      </main>
+      <Footer />
+    </div>
+  );
 }
