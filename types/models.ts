@@ -1,14 +1,3 @@
-// types/models.ts
-
-export interface User {
-    id: string;
-    name: string;
-    email: string;
-    password: string;
-    createdAt: Date;
-    updatedAt: Date;
-}
-
 export interface Lesson {
     id: string;
     title: string;
