@@ -1,4 +1,4 @@
-import { connectToDatabase } from '@/app/api/tutors/lib/mongodb';
+import { connectToDatabase } from '@/app/lib/db/mongodb';
 import { NextRequest, NextResponse } from 'next/server';
 import bcryptjs from 'bcryptjs';
 import { User } from '@/types/user';

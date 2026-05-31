@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
-import TutorsSection from "@/components/TutorsSection";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/layout/Hero";
+import Footer from "@/components/layout/Footer";
+import TutorsSection from "@/components/tutor/TutorsSection";
 
 interface Tutor {
   name: string;
