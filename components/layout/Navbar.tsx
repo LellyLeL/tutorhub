@@ -22,12 +22,21 @@ export default function Navbar({ onTutorsClick, onHomeClick }: NavbarProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <button 
-              onClick={onHomeClick}
-              className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
-            >
-              TutorHub
-            </button>
+            {onHomeClick ? (
+              <button
+                onClick={onHomeClick}
+                className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                TutorHub
+              </button>
+            ) : (
+              <Link
+                href="/"
+                className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                TutorHub
+              </Link>
+            )}
           </div>
           
           <NavigationMenu>
